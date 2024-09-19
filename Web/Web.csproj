@@ -18,8 +18,6 @@
 
   <ItemGroup>
     <Folder Include="Areas\ADMIN\Controllers\" />
-    <Folder Include="Areas\ADMIN\Data\" />
-    <Folder Include="Areas\ADMIN\Models\" />
     <Folder Include="Areas\USUARIO\Controllers\" />
     <Folder Include="Areas\USUARIO\Data\" />
     <Folder Include="Areas\USUARIO\Models\" />
