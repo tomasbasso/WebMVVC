@@ -7,9 +7,12 @@ using System.Threading.Tasks;
 
 namespace APP.ACCESODATOS.Data.Repository.IRepository
 {
+    //Es un repositorio genérico que ofrece métodos CRUD básicos(agregar, obtener, eliminar). 
+      //  Usa la expresión genérica<T> para ser reutilizado con cualquier entidad.
+
         //INTERFACE DE REPOSITORIO GENÉRICO---SIEMPRE ES EL MISMO CODIGO
 
-        // LA LETRA T ES UN PARAMETRO DE TIPO GENERICO
+    // LA LETRA T ES UN PARAMETRO DE TIPO GENERICO
         public interface IRepository<T> where T : class
         {
             //OBTENER UN REGISTRO POR ID 

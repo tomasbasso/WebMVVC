@@ -10,7 +10,10 @@ using System.Threading.Tasks;
 
 namespace APP.ACCESODATOS.Data.Repository
 {
- 
+    //Es la implementación genérica de IRepository<T>, que maneja todas las operaciones CRUD a nivel de base 
+    //    de datos mediante Entity Framework.Proporciona métodos para agregar, eliminar y obtener entidades. 
+    //    Además, permite filtrar, incluir propiedades y ordenar los resultados.
+
         public class Repository<T> : IRepository<T> where T : class
         {
             protected readonly DbContext Context;

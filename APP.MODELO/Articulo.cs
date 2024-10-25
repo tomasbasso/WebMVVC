@@ -27,9 +27,9 @@ namespace APP.MODELO
         public string urlImagen { get; set; }
 
         [Required(ErrorMessage = "La Categoria es Obligatoria")]
-        public int CategoriaId { get; set; }
+        public int id { get; set; }
 
-        [ForeignKey("CategoriaId")]
+        [ForeignKey("id")]
         public Categoria Categoria { get; set; }
     }
 }

@@ -14,7 +14,7 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 // Registro de IContenedorTrabajo
 builder.Services.AddScoped<IContenedorTrabajo, ContenedorTrabajo>();
-
+builder.Services.AddScoped<IArticuloRepository, ArticuloRepository>();
 // (Opcional) Registro individual de ICategoriaRepository
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
@@ -44,7 +44,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{area=ADMIN}/{controller=Categoria}/{action=Index}/{id?}");
+    pattern: "{area=ADMIN}/{controller=Articulo}/{action=Index}/{id?}");
 app.MapRazorPages();
 
 app.Run();

@@ -10,7 +10,7 @@ namespace APP.MODELO
     public class Categoria
     {
         [Key]
-        public int Id { get; set; }
+        public int id { get; set; }
         [Required(ErrorMessage = "Ingrese nombre de Categoria")]
         [StringLength(50)]
         public string Nombre {get;set;}
